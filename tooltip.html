@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+
+</style>
+<body style="text-align:center;">
+
+<h2>Top Tooltip w/ Bottom Arrow</h2>
+
+<div class="tooltip">
+  <span class="tooltiptext">Hover over me</span>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+    border-color: white;
+    border-style: double;
+    border-width: 3px;
+
+        border-style: solid;
+    border-color: white;
+
+        border-bottom-style: dashed;
+    border-color: white;
